@@ -1,6 +1,5 @@
 #import xarray as xr
 import pandas as pd
-import os
 import numpy as np
 import pdb
 #def main():
