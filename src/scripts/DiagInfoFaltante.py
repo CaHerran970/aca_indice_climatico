@@ -63,11 +63,11 @@ missing_periods_monthly.to_csv("missing_periods_monthly.csv", index=False)
 missing_periods_yearly.to_csv("missing_periods_yearly.csv", index=False)
 
 #  Mostrar resultados en consola
-print("📊 Diagnóstico de datos faltantes:")
-print(f"🔹 Total de datos faltantes: {df['is_nan'].sum()}")
-print("\n🔹 Datos faltantes por año:")
+print(" Diagnóstico de datos faltantes:")
+print("Total de datos faltantes: {df['is_nan'].sum()}")
+print(" Datos faltantes por año:")
 print(missing_by_year)
 print("Datos faltantes por coordenada:")
 print(missing_by_coord)
-print("\n🔹 Períodos consecutivos sin datos (diarios):")
+print("Períodos consecutivos sin datos (diarios):")
 print(missing_periods_daily.head(10))  # Muestra solo los primeros 10 períodos
